@@ -1,4 +1,4 @@
-
+/* Reset some default styles */
 body, h1, h2, p, ul, li, img {
     margin: 0;
     padding: 0;
@@ -7,6 +7,7 @@ body, h1, h2, p, ul, li, img {
     border: 0;
 }
 
+/* Set a base font and background color */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -16,9 +17,9 @@ body {
     padding: 0;
 }
 
-
+/* Style the header */
 header {
-    background: #1e90ff;
+    background: #1e90ff; /* DodgerBlue */
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -44,6 +45,7 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Style the main content */
 main {
     padding: 20px;
     max-width: 800px;
@@ -56,7 +58,7 @@ main h1 {
     margin-bottom: 20px;
     font-size: 2em;
     text-align: center;
-    color: #1e90ff;
+    color: #1e90ff; /* DodgerBlue */
 }
 
 main img {
@@ -70,6 +72,7 @@ main p {
     text-align: center;
 }
 
+/* Style the aside section */
 aside {
     padding: 20px;
     max-width: 800px;
@@ -82,7 +85,7 @@ aside h2 {
     margin-bottom: 20px;
     font-size: 1.5em;
     text-align: center;
-    color: #1e90ff;
+    color: #1e90ff; /* DodgerBlue */
 }
 
 aside img {
@@ -96,8 +99,9 @@ aside p {
     text-align: center;
 }
 
+/* Style the footer */
 footer {
-    background: #1e90ff;
+    background: #1e90ff; /* DodgerBlue */
     color: #fff;
     text-align: center;
     padding: 10px 0;
