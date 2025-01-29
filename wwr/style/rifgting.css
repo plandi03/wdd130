@@ -42,7 +42,7 @@ nav ul li a {
 
 /* Hero Section */
 .hero {
-    background-image: url('images/hero.webp');
+    background-image: url('hero.webp');
     position: relative;
     text-align: center;
     color: white;
