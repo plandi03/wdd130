@@ -45,7 +45,7 @@ nav ul li a {
     position: relative;
     text-align: center;
     color: white;
-    background-image: url('images/hero.webp'); /* Add your background image path here */
+    background-image: url('images/hero.webp'); 
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
