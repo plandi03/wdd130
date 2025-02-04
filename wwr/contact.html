@@ -4,46 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us - White Water Rafting</title>
-  <link rel="stylesheet" href="style/contact.css">
+  <link rel="stylesheet" href="style/rifgting.css">
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Company Logo">
+    <img src="images/Logo_transparent.webp" alt="Company Logo">
     <nav>
       <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
       <a href="trips.html">Trips</a>
       <a href="contact.html">Contact Us</a>
     </nav>
   </header>
 
   <main>
-    <section class="company-info">
-      <h2>Our Office</h2>
-      <p>123 River Lane, Adventure City, AC 12345</p>
-      <p>Phone: (123) 456-7890</p>
-      <p>Email: info@whitewaterrafting.com</p>
-      <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen></iframe>
-    </section>
+    <section class="info-and-profiles">
+      <div class="company-info">
+        <h2>Our Office</h2>
+        <p>123 River Lane, Adventure City, AC 12345</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: info@whitewaterrafting.com</p>
+        <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen></iframe>
+      </div>
 
-    <section class="employee-profiles">
-      <h2>Meet Our Team</h2>
-      <figure>
-        <img src="employee1.jpg" alt="Employee 1">
-        <figcaption>John Doe, Customer Support Manager</figcaption>
-      </figure>
-      <figure>
-        <img src="employee2.jpg" alt="Employee 2">
-        <figcaption>Jane Smith, Reservation Specialist</figcaption>
-      </figure>
-      <figure>
-        <img src="employee3.jpg" alt="Employee 3">
-        <figcaption>Mike Johnson, Safety Coordinator</figcaption>
-      </figure>
+      <div class="employee-profiles">
+        <h2>Meet Our Team</h2>
+        <figure>
+          <img src="images/employer1.webp" alt="Employee 1">
+          <figcaption>John Doe, Customer Support Manager</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employer2.webp" alt="Employee 2">
+          <figcaption>Dereck Smith, Reservation Specialist</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employer4.webp" alt="Employee 3">
+          <figcaption>Mike Johnson, Safety Coordinator</figcaption>
+        </figure>
+      </div>
     </section>
 
     <section class="contact-form">
-      <h2>Contact Us</h2>
+      <h1>Contact Us</h1>
       <form action="#" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -51,33 +52,41 @@
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
 
-        <label>Purpose of Message:</label>
-        <input type="radio" id="general" name="purpose" value="General Inquiry" required>
-        <label for="general">General Inquiry</label>
-        <input type="radio" id="reservation" name="purpose" value="Reservation Question">
-        <label for="reservation">Reservation Question</label>
-        <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
-        <label for="suggestion">Website Suggestion</label>
+        <label>Purpose of the message:</label>
+        <div style="display: flex; align-items: center;">
+          <input type="radio" id="general" name="purpose" value="general">
+          <label for="general" style="margin-right: 20px;">General Inquiry</label>
+          <input type="radio" id="reservation" name="purpose" value="reservation">
+          <label for="reservation" style="margin-right: 20px;">Reservation Question</label>
+          <input type="radio" id="suggestion" name="purpose" value="suggestion">
+          <label for="suggestion">Website Suggestion</label>
+        </div>
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" required></textarea>
 
-        <input type="checkbox" id="newsletter" name="newsletter">
-        <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
 
-        <button type="submit">Send Message</button>
+        <button type="submit">Submit</button>
       </form>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2023 White Water Rafting</p>
-    <nav>
-      <a href="https://facebook.com">Facebook</a>
-      <a href="https://twitter.com">Twitter</a>
-      <a href="https://instagram.com">Instagram</a>
-    </nav>
-    <a href="contact-wireframe.png">View Wireframe</a>
+    <a href="wireframe.png">View Wireframe</a>
+    <nav class="socialmedia">
+        <a href="https://facebook.com" target="_blank">
+          <img src="images/facbook-icon.webp" alt="Facebook">
+        </a>
+        <a href="https://x.com" target="_blank">
+          <img src="images/x-icon.webp" alt="X - former Twitter">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="images/instagram-icon.webp" alt="Instagram">
+        </a>
+      </nav>
   </footer>
 </body>
 </html>

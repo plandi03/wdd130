@@ -1,154 +1,125 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* Header with CSS Grid */
+/* Company Info Section */
 header {
-    display: grid;
-    grid-template-columns: auto 1fr; /* Logo on the left, navigation on the right */
-    align-items: center;
-    background-color: #0077b6;
-    color: white;
-    padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #165f64;
+  color: white;
+  padding: 10px 20px;
 }
 
-header img {
-    height: 50px; /* Adjust logo size */
+nav {
+  display: flex;
+  justify-content: flex-end; /* Align navigation to the right */
 }
 
-/* Navigation with CSS Flexbox */
-nav ul {
-    display: flex;
-    justify-content: flex-end; /* Align navigation items to the right */
-    list-style: none;
-    margin: 0;
-    padding: 0;
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 20px; /* Add some space between links */
 }
 
-nav ul li {
-    margin-left: 20px; /* Space between navigation items */
+/* Info and Profiles Section */
+.info-and-profiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.company-info {
+  display: flex;
+  flex-direction: column;
 }
 
-/* Hero Section */
-.hero {
-    background-image: url('hero.webp');
-    position: relative;
-    text-align: center;
-    color: white;
-    background-size: cover;
-    background-position: center;
-    padding: 100px 20px;
+.company-info iframe {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #ccc;
 }
 
-.hero h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
+/* Employee Profiles Section */
+.employee-profiles {
+  text-align: center;
 }
 
-.hero article {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
-    padding: 20px;
-    margin-top: 20px;
-    display: inline-block;
+.employee-profiles figure {
+  margin: 10px;
 }
 
-.hero article img {
-    float: left;
-    margin-right: 20px;
+.employee-profiles img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
-/* History Section */
-.history {
-    padding: 40px 20px;
-    background-color: #f8f9fa;
-    text-align: center;
+/* Contact Form Section */
+.contact-form {
+  padding: 20px;
 }
 
-.history h2 {
-    margin-bottom: 20px;
+.contact-form label {
+  display: block;
+  margin-top: 10px;
 }
 
-.history .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
 }
 
-.history .text {
-    flex: 1;
-    padding: 0 20px;
+.contact-form input[type="radio"] {
+  margin-top: 10px;
 }
 
-.history .image img {
-    width: 100%;
-    max-width: 300px;
+.contact-form button {
+  background-color: #165f64;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-/* Adventures Section */
-.adventure {
-    padding: 40px 20px;
-    background-color: #e9ecef;
-    text-align: center;
-}
-
-.adventure h2 {
-    margin-bottom: 20px;
-}
-
-.adventure .container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.adventure .image-with-caption {
-    text-align: center;
-    margin: 10px;
-    flex: 1 1 200px; /* Flex items will grow and shrink, with a base width of 200px */
-}
-
-.adventure .image-with-caption img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-}
-
-.adventure .image-with-caption figcaption {
-    margin-top: 10px;
-    font-weight: bold;
+.contact-form button:hover {
+  background-color: #0e4a4f;
 }
 
 /* Footer */
 footer {
-    background-color: #0077b6;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  background-color: #165f64;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
 footer .socialmedia {
-    display: flex;
-    justify-content: flex-end; /* Align social media icons to the right */
-    margin-top: 10px;
+  display: flex;
+  justify-content: flex-end; /* Align social media icons to the right */
+  margin-top: 10px;
 }
 
 footer .socialmedia a {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 footer .socialmedia img {
-    height: 30px;
+  height: 30px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
 }
