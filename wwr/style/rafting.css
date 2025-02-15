@@ -1,22 +1,21 @@
-:root{
-    --primary-color:#390099;
-    --accent1-color:#FF5400;
-    --accent2-color:#131312;
-    --label-color:#ffff;
-    --secondary-color : rgb(179, 200, 206);
+:root {
+    --primary-color: #390099;
+    --accent1-color: #FF5400;
+    --accent2-color: #131312;
+    --label-color: #ffff;
+    --secondary-color: rgb(179, 200, 206);
     --background-small: rgb(179, 222, 222);
     --blue-color: rgb(37, 37, 164);
-    
-    }
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* General styles */
-   body {
+body {
     font-family: 'Jost', 'Roboto';
     margin: 0;
     padding: 0;
@@ -24,7 +23,7 @@
 }
 
 /* Header - CSS Grid */
-  header {
+header {
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
@@ -33,12 +32,12 @@
     padding: 10px;
 }
 
-   header .mylogo img {
+header .mylogo img {
     width: 100px;
 }
 
 /* Navigation - CSS Flex */
-  nav {
+nav {
     display: flex;
     justify-content: space-around;
 }
@@ -48,11 +47,11 @@ nav a {
     text-decoration: none;
     padding: 10px;
 }
-nav a:hover{
-    border: 10px solid var(--accent1-color);
-    }
 
-     
+nav a:hover {
+    border: 10px solid var(--accent1-color);
+}
+
 h1 {
     position: absolute;
     top: 20%;
@@ -60,38 +59,34 @@ h1 {
     transform: translate(-50%, -20%);
     color: var(--label-color);
     font-size: 3rem;
-    background-color: rgba(3, 0, 0, 0.6); 
+    background-color: rgba(3, 0, 0, 0.6);
     width: 100%;
-
 }
 
 /* Hero Section */
 .hero {
-    background-image: url('images/header.webp'); 
-    background-size: cover; 
-    background-position: center; 
-    height: 75vh; 
-    width: 100%; 
-    align-items: center; 
-    display: flex; 
-    justify-content: center; 
-    color: var(--label-color); 
-    text-align: center; 
-    position: relative; 
-    z-index: 1; 
-    
+    background-image: url('images/header.webp');
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: var(--label-color);
+    text-align: center;
+    position: relative;
+    z-index: 1;
 }
-
 
 .hero::before {
-    content: ""; 
+    content: "";
     position: absolute;
-    top: 0; 
-    left: 0; 
-    right: 0; 
+    top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
 }
-
 
 .hero-content h1 {
     font-size: 3rem;
@@ -102,15 +97,14 @@ h1 {
     height: auto;
 }
 
-
 .hero aside {
     position: absolute;
     bottom: 180px;
     left: 20px;
-    background-color: rgba(3, 0, 0, 0.6) ; 
+    background-color: rgba(3, 0, 0, 0.6);
     color: var(--label-color);
     padding: 10px;
-    width: 80%; 
+    width: 80%;
 }
 
 .hero aside img {
@@ -124,19 +118,17 @@ h1 {
     line-height: 1.5;
 }
 
-
-.history p{
+.history p {
     padding: 30px;
 }
 
- .adventure h2,
- .history h2{
+.adventure h2,
+.history h2 {
     text-align: center;
     margin: 0;
     padding: 60px;
     color: var(--primary-color);
     font-size: 2rem;
-    
 }
 
 /* History and Adventure sections */
@@ -157,21 +149,19 @@ h1 {
     border-radius: 8px;
 }
 
-
 figure {
-    text-align: center; 
+    text-align: center;
     margin: 4px;
 }
 
 figcaption {
     font-size: 0.9rem;
-    color: var(--accent2-color); 
+    color: var(--accent2-color);
     margin-top: 1px;
 }
 
-/* contact page*/
-
-.map{
+/* contact page */
+.map {
     padding: 15px;
     background-color: var(--secondary-color);
     box-shadow: 0 0 10px 5px rgb(9, 9, 9); /* Shadow effect */
@@ -188,20 +178,17 @@ figcaption {
     border: none;
 }
 
-
 form {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color:  rgb(179, 222, 222);
+    background-color: rgb(179, 222, 222);
     box-shadow: 0 0 10px 5px black; /* Shadow effect */
 }
 
 .form-group {
     margin-bottom: 15px;
-
 }
-
 
 label {
     font-weight: bold;
@@ -209,7 +196,7 @@ label {
     display: inline-block;
 }
 
-input[type="text"], 
+input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
@@ -255,8 +242,7 @@ legend {
     margin-bottom: 5px;
 }
 
-
-.maps-form{
+.maps-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 20px;
@@ -272,24 +258,20 @@ legend {
     gap: 20px;
 }
 
-.employee img{
+.employee img {
     width: 200px;
-    
-    
 }
 
-.employee{
+.employee {
     padding: 20px;
     background-color: var(--secondary-color);
     border-radius: 6px;
-
 }
 
 .employee p {
     text-align: center;
     margin-top: 5px;
 }
-
 
 /* Footer */
 footer {
@@ -311,42 +293,34 @@ footer .sociallinks img {
     color: var(--label-color);
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: var(--label-color);
     font-size: larger;
     font: bold;
 }
 
-
-
-
-
-
-
-
 /*welcoing message*/
 .welcome-message {
     font-size: 1.3em;
     color: var(--dark-color);
     margin-bottom: 1em;
+}
 
-  }
-
-   /* Fade-in animation */
-   @keyframes fadeIn {
+/* Fade-in animation */
+@keyframes fadeIn {
     from {
-      opacity: 0;
-      transform: translateY(20px);
+        opacity: 0;
+        transform: translateY(20px);
     }
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
- 
-   /* Styling for the delayed */
-  .welcome-section{
+}
+
+/* Styling for the delayed */
+.welcome-section {
     background-color: var(--label-color);
     display: block;
     text-align: center;
@@ -356,27 +330,25 @@ footer a{
     opacity: 0; /* Start invisible */
     animation: fadeIn 1s ease-out forwards; /* 1s duration */
     animation-delay: 1s; /* 1-second delay */
+}
 
-  }
-
-
-  .options-list {
+.options-list {
     list-style-type: none;
     padding: 0;
     margin-bottom: 2em;
-  }
+}
 
-  .options-list li {
+.options-list li {
     font-size: 1.1em;
     margin: 0.5em 0;
     color: var(--dark-color);
-  }
+}
 
-  .call-to-action {
+.call-to-action {
     margin-top: 1em;
-  }
+}
 
-  .cta-button {
+.cta-button {
     background-color: var(--blue-color);
     color: var(--label-color);
     padding: 0.8em 1.5em;
@@ -384,21 +356,17 @@ footer a{
     font-weight: bold;
     border-radius: 5px;
     transition: var(--secondary-color) 0.3s;
-  }
+}
 
-
-
-  .cta-button:hover {
+.cta-button:hover {
     background-color: var(--accent1-color);
-  }
-
+}
 
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-  }
-
+}
 
 .newsletter-container {
     background-color: var(--label-color);
@@ -407,47 +375,47 @@ footer a{
     max-width: 600px;
     padding: 20px;
     margin-top: 30px;
-  }
+}
 
-  .newsletter-container h2 {
+.newsletter-container h2 {
     color: var(--primary-color);
     margin-bottom: 15px;
-  }
+}
 
-  form{
+form {
     text-align: left;
-  }
+}
 
-  label {
+label {
     display: block;
     text-align: left;
     margin-top: 10px;
     color: var(--accent2-color);
-  }
+}
 
-  input[type="text"],
-  input[type="email"],
-  select {
+input[type="text"],
+input[type="email"],
+select {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
     border-radius: 4px;
     border: 1px solid var(--label-color);
     box-sizing: border-box;
-  }
+}
 
-  .checkbox-container {
+.checkbox-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-top: 10px;
-  }
+}
 
-  .checkbox-container label {
+.checkbox-container label {
     font-weight: normal;
-  }
+}
 
-  .subscribe-button {
+.subscribe-button {
     background-color: var(--blue-color);
     color: var(--label-color);
     font-size: 1em;
@@ -458,12 +426,11 @@ footer a{
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
+}
 
-  .subscribe-button:hover {
+.subscribe-button:hover {
     background-color: var(--primary-color);
-  }
-
+}
 
 /* Call to Action */
 .call-to-action {
@@ -478,8 +445,6 @@ footer a{
     text-decoration: none;
     border-radius: 5px;
 }
-
-
 
 /* Explore Section */
 .explore-section {
@@ -507,42 +472,37 @@ footer a{
     height: auto;
 }
 
-
- /* Style summary to look clickable */
- summary {
+/* Style summary to look clickable */
+summary {
     cursor: pointer;
     font-weight: bold;
     color: var(--label-color);
     font-size: 1.1em;
     margin-bottom: 0.5em;
-  }
+}
 
-  /* Style the answer text */
-  .answer {
+/* Style the answer text */
+.answer {
     margin-top: 0.5em;
     color: var(--dark-color);
     background-color: var(--label-color);
-  }
+}
 
-
-  /* Add some space between each question */
-  details {
+/* Add some space between each question */
+details {
     margin-bottom: 1em;
     display: block;
     background-color: var(--blue-color);
-    
-  }
+}
 
-  .questions{
+.questions {
     margin-top: 30px;
     background-color: var(--label-color);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     max-width: 600px;
     padding: 20px;
-  }
-
-
+}
 
 /* Trip CTA Section */
 .trip-cta {
@@ -555,7 +515,7 @@ footer a{
     box-shadow: 0 4px 8px rgba(7, 6, 5, 0.8);
 }
 
-.trips h2{
+.trips h2 {
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
@@ -590,7 +550,6 @@ footer a{
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 40px;
-
 }
 
 .trip-item {
@@ -602,7 +561,7 @@ footer a{
 
 .trip-item img {
     width: 300px;
-    margin-top: 40px; 
+    margin-top: 40px;
     margin-left: 60px;
 }
 
@@ -629,7 +588,6 @@ footer a{
     font-weight: bold;
     margin-top: 5px;
     text-align: center;
-    
 }
 
 /* Trip Table Section */

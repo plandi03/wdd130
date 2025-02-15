@@ -1,130 +1,146 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+:root {
+    --primary-color: #390099;
+    --accent1-color: #FF5400;
+    --accent2-color: #131312;
+    --label-color: #ffff;
+    --secondary-color: rgb(179, 200, 206);
+    --background-small: white;
+    --blue-color: rgb(37, 37, 164);
+}
 
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-small);
 }
 
 /* Company Info Section */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #165f64;
-  color: white;
-  padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent2-color);
+    color: var(--label-color);
+    padding: 10px 20px;
 }
 
 nav {
-  display: flex;
-  justify-content: flex-end; /* Align navigation to the right */
+    display: flex;
+    justify-content: flex-end; /* Align navigation to the right */
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  margin-left: 20px; /* Add some space between links */
+    color: var(--label-color);
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px; /* Add some space between links */
+}
+
+nav a:hover {
+    border: 10px solid var(--accent1-color);
 }
 
 /* Info and Profiles Section */
 .info-and-profiles {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
 }
 
 .company-info {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
-
-
 .company-info iframe {
-  width: 100%;
-  height: 200px;
-  border: 1px solid #ccc;
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ccc;
 }
 
 /* Employee Profiles Section */
 .employee-profiles {
-  text-align: center;
+    text-align: center;
 }
 
 .employee-profiles figure {
-  margin: 10px;
+    margin: 10px;
 }
 
 .employee-profiles img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
 
 /* Contact Form Section */
 .contact-form {
-  padding: 20px;
+    padding: 20px;
 }
 
 .contact-form label {
-  display: block;
-  margin-top: 10px;
+    display: block;
+    margin-top: 10px;
 }
 
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-.contact-form input[type="radio"] {
-  margin-top: 10px;
+contact-form input[type="radio"] {
+    margin-top: 10px;
 }
 
 .contact-form button {
-  background-color: #165f64;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  margin-top: 10px;
-  margin-bottom: 20px;
+    background-color: var(--accent2-color);
+    color: var(--label-color);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
 }
 
 .contact-form button:hover {
-  background-color: #0e4a4f;
+    background-color: var(--accent1-color);
 }
 
 /* Footer */
 footer {
-  background-color: #165f64;
-  color: white;
-  text-align: center;
-  padding: 20px;
+    background-color: var(--accent2-color);
+    color: var(--label-color);
+    text-align: center;
+    padding: 20px;
 }
 
 footer .socialmedia {
-  display: flex;
-  justify-content: flex-end; /* Align social media icons to the right */
-  margin-top: 10px;
+    display: flex;
+    justify-content: flex-end; /* Align social media icons to the right */
+    margin-top: 10px;
 }
 
 footer .socialmedia a {
-  margin: 0 10px;
+    margin: 0 10px;
 }
 
 footer .socialmedia img {
-  height: 30px;
+    height: 30px;
 }
 
 footer a {
-  color: white;
-  text-decoration: none;
+    color: var(--label-color);
+    text-decoration: none;
 }
