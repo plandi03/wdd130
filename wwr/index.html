@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitewater Rafting Website - WDD130</title>
+    <meta name="description" content="Prayer Marangwanda's WDD 130 Whitewater Rafting Website">
+    <meta name="author" content="Prayer Marangwanda">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/rafting.css">
+</head>
+<body>
+    <header>
+            <div class="mylogo">
+            <img src="images/Logo_transparent.webp" alt="My Logo">
+            </div>
+            <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>White Water Rafting</h1>
+            </div>
+        </section>
+                    
+<section class="welcome-section">
+    <div class="welcome-message">
+      <h2>Welcome to the ultimate whitewater rafting experience! Are you looking for a place to:</h2>
+    </div>
+    
+    <ul class="options-list">
+      <li>Challenge yourself with thrilling rapids?</li>
+      <li>Embark on a family-friendly water adventure?</li>
+      <li>Discover breathtaking river landscapes?</li>
+      <li>Gain confidence on the water with guided instruction?</li>
+      <li>Take on an unforgettable group adventure with friends?</li>
+    </ul>
+  
+    <!-- Call to Action -->
+    <div class="call-to-action">
+        <a href="trips.html" class="cta-button">Explore Our Trips</a>
+    </div>
+  </section>
+    
+
+    <section class="explore-section">
+        <h2>Explore some of our places</h2>
+        <br>
+        <br>
+    <div class="explore-grid">
+        <div class="explore-item">
+            <img src="images/wwr-insights-01.webp" alt="Description of Image 1" loading="lazy">
+            <h3>Colorado River - Grand Canyon, Arizona, USA</h3>
+            <p>The Colorado River winds through the majestic Grand Canyon, offering one of the most iconic whitewater rafting experiences in the world. 
+                Adventurers can experience exhilarating rapids, towering canyon walls,
+                 and stunning desert landscapes. Multi-day trips provide opportunities for camping, hiking, and 
+                 exploring hidden waterfalls along the way..</p>
+        </div>
+        <div class="explore-item">
+            <img src="images/wwr-insights-02.webp" alt="Description of Image 2" loading="lazy">
+            <h3> Zambezi River - Victoria Falls, Zimbabwe & Zambia</h3>
+            <p>The Zambezi River below Victoria Falls is known for its intense Class V rapids, making it a bucket-list destination for thrill-seekers. 
+                This section of the river, called the "Batoka Gorge," offers thrilling drops, powerful waves, and breathtaking views 
+                of the gorge's steep cliffs. Rafting trips here often include views of local wildlife and the thunderous roar of the falls..</p>
+        </div>
+        <div class="explore-item">
+            <img src="images/wwr-insights-03.webp" alt="Description of Image 3" loading="lazy">
+            <h3>Futaleufú River - Patagonia, Chile</h3>
+            <p>Nestled in the Andes of Patagonia, the Futaleufú River is renowned for its stunning turquoise water, lush green valleys,
+                 and challenging rapids. The river's Class IV and V rapids provide a thrilling ride,
+                 while the surrounding scenery of snow-capped mountains and pristine forests adds a unique, serene backdrop to the adventure..</p>
+        </div>
+        <div class="explore-item">
+            <img src="images/wwr-insights-04.webp" alt="Description of Image 4" loading="lazy">
+            <h3>Kali Gandaki River - Annapurna Region, Nepal</h3>
+            <p>The Kali Gandaki River in Nepal flows through a valley nestled between the towering peaks of the Annapurna and Dhaulagiri mountain ranges.
+                 Named after the Hindu goddess Kali, this river combines exciting rapids with a cultural journey, as rafters pass traditional Nepalese villages, waterfalls, and temples. 
+                The experience blends adventure with a chance to witness Nepal's breathtaking landscapes and rich heritage..</p>
+        </div>
+    </div>
+
+
+            <!-- Newsletter Signup -->
+<div class="container">         
+<section class="newsletter-container">
+    <h2>Sign Up for Our Rafting Adventures Newsletter</h2>
+    <p>Stay up-to-date with the latest news, special offers, and insider tips!</p>
+    <br>
+    <form action="#" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="experience">Rafting Experience Level:</label>
+      <select id="experience" name="experience" required>
+        <option value="" disabled selected>Select your experience level</option>
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+  
+      <label for="location">Preferred Rafting Location:</label>
+      <select id="location" name="location" required>
+        <option value="" disabled selected>Choose a location</option>
+        <option value="Colorado-River">Colorado River </option>
+        <option value="Futaleufú-River">Futaleufú River </option>
+        <option value="Kali Gandaki-River">Kali Gandaki River </option>
+        <option value="Zambezi-River">Zambezi River</option>
+      </select>
+  
+      <div class="checkbox-container">
+        <label><input type="checkbox" name="interests" value="trip-updates"> Trip Updates</label>
+        <label><input type="checkbox" name="interests" value="safety-tips"> Safety Tips</label>
+        <label><input type="checkbox" name="interests" value="discounts"> Special Discounts</label>
+        <label><input type="checkbox" name="interests" value="stories"> Adventure Stories</label>
+      </div>
+  
+      <button type="submit" class="subscribe-button">Subscribe Now</button>
+    </form>
+</section>
+
+
+ <section class="questions">
+ <h2>Whitewater Rafting: Frequently Asked Questions</h2>  
+ <br> 
+ <br>          
+<details>
+  <summary>What is whitewater rafting?</summary>
+  <p class="answer">Whitewater rafting is a recreational outdoor activity where participants navigate a river in an inflatable raft, often encountering rapids of various difficulty levels.</p>
+</details>
+
+<details>
+  <summary>Is whitewater rafting safe for beginners?</summary>
+  <p class="answer">Yes, many rafting companies offer trips for beginners on mild rapids. Beginners should start with a low-class river, listen to guides, and wear safety gear.</p>
+</details>
+
+<details>
+  <summary>What should I wear for whitewater rafting?</summary>
+  <p class="answer">Wear quick-drying clothing, avoid cotton as it stays wet, and wear secure shoes that won’t slip off. A life jacket and helmet will be provided by the rafting company.</p>
+</details>
+
+<details>
+  <summary>Do I need to know how to swim?</summary>
+  <p class="answer">While it’s recommended, many trips don’t require swimming skills, as you'll wear a life jacket. Non-swimmers should inform the guide and choose calmer waters.</p>
+</details>
+
+<details>
+  <summary>What is the best time of year for rafting?</summary>
+  <p class="answer">The best time depends on the river's location. For example, spring and early summer are ideal for higher water levels, while later summer may offer milder rapids.</p>
+</details>
+
+<details>
+  <summary>Are there age or weight limits for rafting?</summary>
+  <p class="answer">Most rafting companies have minimum age requirements (often around 7-12 years old) and weight limits. These vary based on the river's difficulty level and company policy.</p>
+</details>
+
+<details>
+  <summary>How difficult is whitewater rafting?</summary>
+  <p class="answer">The difficulty depends on the river’s class (I to V). Class I and II are easier and suitable for beginners, while Class IV and V are more challenging and require experience.</p>
+</details>
+
+<details>
+  <summary>Will I get wet during the trip?</summary>
+  <p class="answer">Yes, getting wet is part of the fun! Rapids can splash water into the raft, so expect to get wet, especially on higher-class rapids.</p>
+</details>
+
+<details>
+  <summary>Can I bring my camera or phone?</summary>
+  <p class="answer">It’s risky to bring electronics due to water exposure. Some companies offer waterproof cases or photos taken by guides. Waterproof cameras are also an option.</p>
+</details>
+
+<details>
+  <summary>Do I need to bring my own equipment?</summary>
+  <p class="answer">Rafting companies typically provide necessary equipment, including the raft, paddles, life jackets, and helmets. You just need to bring appropriate clothing and personal items.</p>
+</details>
+
+<details>
+    <summary>Can children participate in whitewater rafting?</summary>
+    <p class="answer">Yes, children can participate on family-friendly trips designed with safety in mind. Many rivers have mild rapids suitable for young children when accompanied by adults.</p>
+  </details>
+
+  <details>
+    <summary>What if the weather changes unexpectedly?</summary>
+    <p class="answer">Rafting companies monitor weather conditions and prioritize safety. Trips may be postponed or rescheduled if there’s a risk of storms or dangerous conditions.</p>
+  </details>
+</section>
+</div>
+
+    </main>
+    <footer>
+            <div class="footers">
+                <p>@2024 Pablo Landivar 💦</p>
+                <nav class="sociallinks">
+                    <a href="https://facebook.com">
+                        <img src="images/facbook-icon.webp" alt="Facebook"width="25">
+                    </a>
+                    <a href="http://twitter.com">
+                        <img src="images/x-icon.webp" alt="Twitter"width="25">
+                    </a>
+                    <a href="http://instagram.com">
+                        <img src="images/instagram-icon.webp" alt="instagram"width="25">
+                    </a>
+                </nav>
+            </div>
+        </footer>
+</body>
+</html>
