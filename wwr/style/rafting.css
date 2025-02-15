@@ -67,10 +67,10 @@ h1 {
 
 /* Hero Section */
 .hero {
-    background-image: url('../images/hero1.jpg'); 
+    background-image: url('images/header.webp'); 
     background-size: cover; 
     background-position: center; 
-    height: 100vh; 
+    height: 75vh; 
     width: 100%; 
     align-items: center; 
     display: flex; 
