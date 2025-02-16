@@ -5,80 +5,106 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Contact White Water Rafting for more information about our trips and services.">
   <meta name="keywords" content="white water rafting, contact, email, phone, address">
-  <meta name="author" content="White Water Rafting">
+  <meta name="author" content="Pablo Landivar">
   <title>Contact Us - White Water Rafting</title>
-  <link rel="stylesheet" href="style/rifgting.css">
+  <link rel="stylesheet" href="style/rafting.css">
 </head>
 <body>
   <header>
-    <img src="images/Logo_transparent.webp" alt="Company Logo">
+    <div class="mylogo">
+      <img src="images/Logo_transparent.webp" alt="Company Logo">
+    </div>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="trips.html">Trips</a>
-      <a href="contact.html">Contact Us</a>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <section class="info-and-profiles">
-      <div class="company-info">
-        <h2>Our Office</h2>
-        <p>Watkiss Way, Cardiff CF11 0SY, United Kingdom</p>
-        <p>Phone: (123) 456-7890</p>
-        <p>Email: info@whitewaterrafting.com</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9518.688574528465!2d-3.199059916786082!3d51.44870826819909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e036704aec66d%3A0x7411f60cb4f8b5e8!2sCardiff%20International%20White%20Water!5e1!3m2!1sen!2sbo!4v1738690764555!5m2!1sen!2sbo" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-
-      <div class="employee-profiles">
-        <h2>Meet Our Team</h2>
-        <figure>
-          <img src="images/employer1.webp" alt="Employee 1">
-          <figcaption>John Doe, Customer Support Manager</figcaption>
-        </figure>
-        <figure>
-          <img src="images/employer2.webp" alt="Employee 2">
-          <figcaption>Dereck Smith, Reservation Specialist</figcaption>
-        </figure>
-        <figure>
-          <img src="images/employer4.webp" alt="Employee 3">
-          <figcaption>Mike Johnson, Safety Coordinator</figcaption>
-        </figure>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>White Water Rafting</h1>
+        <img src="style/hero.webp" alt="hero image">
+        <aside>
+          <img src="images/wwr-insights-01.webp" alt="Rafting Adventure">
+          <p>Join us for an unforgettable experience on the river. Our rafting tours offer something for everyone, from beginners to experts.</p>
+        </aside>
       </div>
     </section>
 
-    <section class="contact-form">
-      <h1>Contact Us</h1>
-      <form action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    <section class="maps-form">
+      <div class="map">
+        <h2>Company Information</h2>
+        <p>Address: 144 River Rd, Vanderbijlpark, 1911</p>
+        <p>Phone: (021) 454-7878</p>
+        <p>Email: whitewater@raftingco.com</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3562.8768667739805!2d27.81497507443156!3d-26.748305186352635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e945a4000000001%3A0x512eb420d4794784!2sVaal%20River%20Resort!5e0!3m2!1sen!2sza!4v1729602112826!5m2!1sen!2sza" class="map-embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+      <section>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
 
-        <label>Purpose of the message:</label>
-        <div style="display: flex; align-items: center;">
-          <input type="radio" id="general" name="purpose" value="general">
-          <label for="general" style="margin-right: 20px;">General Inquiry</label>
-          <input type="radio" id="reservation" name="purpose" value="reservation">
-          <label for="reservation" style="margin-right: 20px;">Reservation Question</label>
-          <input type="radio" id="suggestion" name="purpose" value="suggestion">
-          <label for="suggestion">Website Suggestion</label>
-        </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
+          <fieldset class="form-group">
+            <legend>Purpose of Message:</legend>
+            <label class="radio-label" for="purpose-inquiry">
+              <input type="radio" id="purpose-inquiry" name="purpose" value="inquiry" required> General Inquiry
+            </label>
+            <label class="radio-label" for="purpose-reservation">
+              <input type="radio" id="purpose-reservation" name="purpose" value="reservation"> Reservation Question
+            </label>
+            <label class="radio-label" for="purpose-suggestion">
+              <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion"> Website Suggestion
+            </label>
+          </fieldset>
 
-        <input type="checkbox" id="subscribe" name="subscribe">
-        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit">Please subscribe me to the monthly newsletter</button>
+          </div>
+        </form>
+      </section>
+    </section>
 
-        <button type="submit">Submit</button>
-      </form>
+    <section class="employee-profiles">
+      <div class="employee">
+        <img src="images/employer1.webp" alt="John Doe - Lead Guide">
+        <p>John Troy - Lead Guide</p>
+        <p>John is an experienced river guide with a deep knowledge of local waterways and safety procedures. His calm demeanor and clear instructions put participants at ease, allowing them to fully enjoy the thrill of rafting. He has a passion for teaching and makes every trip exciting yet safe.</p>
+        <p>Merits: Wilderness First Responder certified, highly rated by customers, and recognized for his expert navigation and safety management.</p>
+      </div>
+      <div class="employee">
+        <img src="images/employer2.webp" alt="Jane Smith - Operations Manager">
+        <p>Jane Smith - Operations Manager</p>
+        <p>Jane brings over 10 years of experience in outdoor adventure management. She ensures that all rafting trips are well-organized and meet the highest safety standards. Her excellent leadership skills and attention to detail guarantee smooth operations, making every rafting adventure safe and enjoyable.</p>
+        <p>Merits: Expertise in logistics, certified in outdoor safety, and recognized for outstanding organizational skills.</p>
+      </div>
+      <div class="employee">
+        <img src="images/employer3.webp" alt="Emily Johnson - Customer Support">
+        <p>Emily Johnson - Customer Support</p>
+        <p>Emily is dedicated to providing top-notch customer service. With a friendly and approachable attitude, she ensures that every customer feels heard and supported, from booking inquiries to post-trip follow-ups. Emily excels at solving problems quickly and efficiently.</p>
+        <p>Merits: Awarded for excellence in customer service, known for quick resolution of issues, and highly praised for her communication skills.</p>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2023 White Water Rafting</p>
-    <a href="https://wireframe.cc/JvNxKj">View Wireframe</a>
+    <p>©️ 2025 ⚓ White Water Rafting ⚓ Pablo Landivar </p>
     <nav class="socialmedia">
         <a href="https://facebook.com" target="_blank">
           <img src="images/facbook-icon.webp" alt="Facebook">
@@ -90,6 +116,6 @@
           <img src="images/instagram-icon.webp" alt="Instagram">
         </a>
       </nav>
-  </footer>
+</footer>
 </body>
 </html>
